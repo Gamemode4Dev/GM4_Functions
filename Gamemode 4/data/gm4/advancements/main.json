@@ -1,0 +1,17 @@
+{
+	"display": {
+        "icon": {
+            "item": "minecraft:repeating_command_block"
+        },
+        "title": "Gamemode 4",
+        "description": "Play with Gamemode 4",
+        "frame": "task",
+		"show_toast": false,
+		"announce_to_chat":true
+    },
+    "criteria": {
+		"start": {
+        	"trigger": "minecraft:impossible"
+        }
+    }
+}
