@@ -1,0 +1,25 @@
+{
+	"display": {
+        "icon": {
+            "item": "minecraft:tnt"
+        },
+        "title": "Batboozled",
+        "description": "Get blown up by a Bat Grenade",
+        "frame": "task"
+    },
+	"parent":"gm4:main",
+    "criteria": {
+		"creeper": {
+        	"trigger": "minecraft:entity_killed_player",
+        	"conditions": {
+            	"entity": {
+                	"type": "creeper",
+					"nbt": "{Tags:[\"GM4_bat\"]}"
+                },
+            	"killing_blow": {
+                	"is_explosion:": true
+				}
+			}
+        }
+    }
+}
