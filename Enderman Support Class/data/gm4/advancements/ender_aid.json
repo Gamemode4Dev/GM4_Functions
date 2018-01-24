@@ -1,0 +1,23 @@
+{
+	"display": {
+        "icon": {
+            "item": "minecraft:ender_pearl"
+        },
+        "title": "Ender Aid",
+        "description": "Come in contact with a support Enderman",
+        "frame": "task"
+    },
+	"parent":"gm4:main",
+    "criteria": {
+		"enderaid": {
+        	"trigger": "minecraft:entity_hurt_player",
+        	"conditions": {
+            	"damage": {
+					"source_entity":{
+						"nbt": "{Tags:[\"GM4_ESC\"]}"
+					}
+				}
+			}
+        }
+    }
+}
